@@ -1,0 +1,342 @@
+import pygame
+import sys
+import random
+from pygame import mixer
+
+pygame.init()
+mydis = pygame.display.set_mode((1000, 700))
+black = (0, 0, 0)
+white = (255, 255, 255)
+erase = (200, 0, 255)
+fontObj1 = pygame.font.Font('freesansbold.ttf', 70)
+fontObj2 = pygame.font.Font('freesansbold.ttf', 50)
+fontObj3 = pygame.font.Font('freesansbold.ttf', 40)
+pygame.display.set_caption("FIND PAIR MEDIUM BY BRAIN STEAKS")
+
+
+class clickable:
+    def __init__(self, startx, starty, w, h, uid):
+        self.startx = startx
+        self.starty = starty
+        self.w = w
+        self.h = h
+        self.uid = uid
+
+    def isover(self, pos):
+        if pos[0] > self.startx and pos[0] < self.startx + self.w:
+            if pos[1] > self.starty and pos[1] < self.starty + self.h:
+                return True
+            else:
+                return False
+        else:
+            return False
+
+
+def pair_medium():
+    mixer.music.load('pair_background.mp3')
+    mixer.music.play(-1)
+    img = pygame.image.load("blackbg.jpg")
+    bgo = pygame.transform.scale(img, (1000, 700))
+    mydis.blit(bgo, (0, 0))
+    img = pygame.image.load("pairbg.png")
+    bg = pygame.transform.scale(img, (1000, 700))
+    mydis.blit(bg, (0, 0))
+
+    cback = pygame.image.load("cardback.png")
+    cback = pygame.transform.scale(cback, (100, 130))
+
+    img = pygame.image.load("paircut.png")
+    cut = pygame.transform.scale(img, (1000, 700))
+
+    img = pygame.image.load("dim.png")
+    dim = pygame.transform.scale(img, (1000, 700))
+
+    img = pygame.image.load("dialog.png")
+    dial = pygame.transform.scale(img, (1000, 700))
+
+    textSurfaceObj = fontObj2.render("LIVES", True, black)
+    textRectObj = textSurfaceObj.get_rect()
+    textRectObj.center = (835, 130)
+    mydis.blit(textSurfaceObj, textRectObj)
+
+    textSurfaceObj = fontObj2.render("20", True, black)
+    textRectObj = textSurfaceObj.get_rect()
+    textRectObj.center = (835, 245)
+    mydis.blit(textSurfaceObj, textRectObj)
+
+    textSurfaceObj = fontObj1.render("BACK", True, black)
+    textRectObj = textSurfaceObj.get_rect()
+    textRectObj.center = (835, 470)
+    mydis.blit(textSurfaceObj, textRectObj)
+
+    textSurfaceObj = fontObj1.render("RESET", True, black)
+    textRectObj = textSurfaceObj.get_rect()
+    textRectObj.center = (835, 610)
+    mydis.blit(textSurfaceObj, textRectObj)
+
+    back_b = clickable(705, 420, 260, 100, 50)
+    reset_b = clickable(705, 560, 260, 100, 50)
+    rest_b = clickable(280, 420, 190, 50, 20)
+    bck_b = clickable(530, 420, 190, 50, 20)
+
+    active = 0
+    c_left = 20
+    diag = 0
+
+    cards = []
+    selected = []
+
+    for i in range(4):
+        for j in range(5):
+            x = 45 + j * 120
+            y = 105 + i * 140
+            mydis.blit(cback, (x, y))
+            c = clickable(x, y, 100, 130, 5 * i + j)
+            cards.append(c)
+
+    randlist = []
+
+    def randomise():
+        nonlocal randlist
+        k = random.randint(1, 17)
+        l = random.randint(3, 5)
+        l = l * 2 + 1
+
+        randlist = []
+        for i in range(20):
+            k = k + l
+            if k > 20:
+                k = k - 20
+            while k in randlist:
+                k += 5
+                if k > 20:
+                    k = k - 20
+            randlist.append(k)
+
+    randomise()
+
+    curr_img = None
+    curr_num = None
+
+    img = pygame.image.load("pair1.png")
+    img1 = pygame.transform.scale(img, (100, 130))
+
+    img = pygame.image.load("pair2.png")
+    img2 = pygame.transform.scale(img, (100, 130))
+
+    img = pygame.image.load("pair3.jpg")
+    img3 = pygame.transform.scale(img, (100, 130))
+
+    img = pygame.image.load("pair4.jpg")
+    img4 = pygame.transform.scale(img, (100, 130))
+
+    img = pygame.image.load("pair5.png")
+    img5 = pygame.transform.scale(img, (100, 130))
+
+    img = pygame.image.load("pair6.jpg")
+    img6 = pygame.transform.scale(img, (100, 130))
+
+    img = pygame.image.load("pair7.png")
+    img7 = pygame.transform.scale(img, (100, 130))
+
+    img = pygame.image.load("pair8.png")
+    img8 = pygame.transform.scale(img, (100, 130))
+
+    img = pygame.image.load("pair9.png")
+    img9 = pygame.transform.scale(img, (100, 130))
+
+    img = pygame.image.load("pair10.png")
+    img10 = pygame.transform.scale(img, (100, 130))
+
+    def flip(n):
+        nonlocal active
+        nonlocal img1
+        nonlocal img2
+        nonlocal img3
+        nonlocal img4
+        nonlocal img5
+        nonlocal img6
+        nonlocal img7
+        nonlocal img8
+        nonlocal img9
+        nonlocal img10
+        nonlocal curr_img
+        nonlocal curr_num
+        x = n % 5
+        y = n // 5
+        x = 45 + x * 120
+        y = 105 + y * 140
+        img_id = (randlist[n] + 1) // 2
+        im = "img" + str(img_id)
+        im = eval(im)
+        mydis.blit(im, (x, y))
+        if active == 1:
+            pygame.display.update()
+            pygame.time.wait(500)
+            check(im, n)
+        else:
+            curr_img = im
+            curr_num = n
+            selected.append(n)
+            active = 1
+
+    def reset():
+        mixer.music.load('pair_background.mp3')
+        mixer.music.play()
+        nonlocal c_left
+        nonlocal selected
+        nonlocal active
+        mydis.blit(bgo, (0, 0))
+        mydis.blit(bg, (0, 0))
+        c_left = 20
+        selected = []
+        randomise()
+        for i in range(4):
+            for j in range(5):
+                x = 45 + j * 120
+                y = 105 + i * 140
+                mydis.blit(cback, (x, y))
+
+        textSurfaceObj = fontObj2.render("LIVES", True, black)
+        textRectObj = textSurfaceObj.get_rect()
+        textRectObj.center = (835, 130)
+        mydis.blit(textSurfaceObj, textRectObj)
+
+        textSurfaceObj = fontObj2.render("20", True, black)
+        textRectObj = textSurfaceObj.get_rect()
+        textRectObj.center = (835, 245)
+        mydis.blit(textSurfaceObj, textRectObj)
+
+        textSurfaceObj = fontObj1.render("BACK", True, black)
+        textRectObj = textSurfaceObj.get_rect()
+        textRectObj.center = (835, 470)
+        mydis.blit(textSurfaceObj, textRectObj)
+
+        textSurfaceObj = fontObj1.render("RESET", True, black)
+        textRectObj = textSurfaceObj.get_rect()
+        textRectObj.center = (835, 610)
+        mydis.blit(textSurfaceObj, textRectObj)
+        active = 0
+
+    def show_win():
+        mixer.music.stop()
+        button = mixer.Sound("pair_winning.wav")
+        button.play()
+        nonlocal diag
+        mydis.blit(dim, (0, 0))
+        mydis.blit(dial, (0, 0))
+        textSurfaceObj = fontObj2.render("LEVEL COMPLETE", True, black)
+        textRectObj = textSurfaceObj.get_rect()
+        textRectObj.center = (500, 300)
+        mydis.blit(textSurfaceObj, textRectObj)
+        textSurfaceObj = fontObj3.render("RESTART", True, black)
+        textRectObj = textSurfaceObj.get_rect()
+        textRectObj.center = (375, 445)
+        mydis.blit(textSurfaceObj, textRectObj)
+        textSurfaceObj = fontObj3.render("BACK", True, black)
+        textRectObj = textSurfaceObj.get_rect()
+        textRectObj.center = (625, 445)
+        mydis.blit(textSurfaceObj, textRectObj)
+        pygame.display.update()
+        diag = 1
+
+    def show_loss():
+        mixer.music.stop()
+        mixer.music.load('pair_loosing.mp3')
+        mixer.music.play()
+        nonlocal diag
+        mydis.blit(dim, (0, 0))
+        mydis.blit(dial, (0, 0))
+        textSurfaceObj = fontObj2.render("GAME OVER", True, black)
+        textRectObj = textSurfaceObj.get_rect()
+        textRectObj.center = (500, 300)
+        mydis.blit(textSurfaceObj, textRectObj)
+        textSurfaceObj = fontObj3.render("RETRY", True, black)
+        textRectObj = textSurfaceObj.get_rect()
+        textRectObj.center = (375, 445)
+        mydis.blit(textSurfaceObj, textRectObj)
+        textSurfaceObj = fontObj3.render("BACK", True, black)
+        textRectObj = textSurfaceObj.get_rect()
+        textRectObj.center = (625, 445)
+        mydis.blit(textSurfaceObj, textRectObj)
+        pygame.display.update()
+        diag = 1
+
+    def check(ob, m):
+        nonlocal curr_img
+        nonlocal curr_num
+        nonlocal cback
+        nonlocal active
+        nonlocal c_left
+        if ob == curr_img:
+            selected.append(m)
+            if len(selected) == 20:
+                show_win()
+        else:
+            x = m % 5
+            y = m // 5
+            x = 45 + x * 120
+            y = 105 + y * 140
+            mydis.blit(cback, (x, y))
+            x = curr_num % 5
+            y = curr_num // 5
+            x = 45 + x * 120
+            y = 105 + y * 140
+            mydis.blit(cback, (x, y))
+            selected.pop()
+
+            c_left -= 1
+            mydis.blit(cut, (0, 0))
+
+            textSurfaceObj = fontObj2.render(str(c_left), True, black)
+            textRectObj = textSurfaceObj.get_rect()
+            textRectObj.center = (835, 245)
+            mydis.blit(textSurfaceObj, textRectObj)
+
+            if c_left == 0:
+                show_loss()
+
+        active = 0
+
+    while True:
+        for event in pygame.event.get():
+            pos = pygame.mouse.get_pos()
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                sys.exit()
+
+            if event.type == pygame.MOUSEBUTTONDOWN:
+                if diag == 0:
+                    for i in cards:
+                        button = mixer.Sound("button.wav")
+                        button.play()
+                        if i.isover(pos) and i.uid not in selected:
+                            flip(i.uid)
+
+                    if back_b.isover(pos):
+                        button = mixer.Sound("button.wav")
+                        button.play()
+                        import findpair_levels
+                        findpair_levels.levels()
+                    if reset_b.isover(pos):
+                        button = mixer.Sound("button.wav")
+                        button.play()
+                        reset()
+
+                if diag == 1:
+                    if rest_b.isover(pos):
+                        button = mixer.Sound("button.wav")
+                        button.play()
+                        reset()
+                        diag = 0
+                    if bck_b.isover(pos):
+                        button = mixer.Sound("button.wav")
+                        button.play()
+                        import findpair_levels
+                        findpair_levels.levels()
+                        diag = 0
+
+        pygame.display.update()
+
+
+pair_medium()
