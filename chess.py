@@ -612,7 +612,7 @@ class Game:
 
         pygame.display.set_caption("CHESS BY BRAIN STEAKS")
 
-        icon = pygame.image.load('chess_icon.png')
+        icon = pygame.image.load('Chess_Items/Images/chess_icon.png')
         pygame.display.set_icon(icon)
         pygame.display.update()
         self.clock = pygame.time.Clock()
@@ -625,13 +625,13 @@ class Game:
 
     def start_game(self):
         mixer.music.stop()
-        mixer.music.load('chess_background.mp3')
+        mixer.music.load('Chess_Items/Sound/chess_background.mp3')
         mixer.music.play(-1)
         self.board_offset_x = 100
         self.board_offset_y = 50
         self.board_dimensions = (self.board_offset_x, self.board_offset_y)
 
-        self.board_img = pygame.image.load("board.png").convert()
+        self.board_img = pygame.image.load("Chess_Items/Images/board.png").convert()
 
         square_length = self.board_img.get_rect().width // 8
 
@@ -643,7 +643,7 @@ class Game:
                 self.board_locations[x].append([self.board_offset_x + (x * square_length),
                                                 self.board_offset_y + (y * square_length)])
 
-        self.chess = Chess(self.screen, "pieces.png", self.board_locations, square_length)
+        self.chess = Chess(self.screen, "Chess_Items/Images/pieces.png", self.board_locations, square_length)
 
         while self.running:
             self.clock.tick(5)
@@ -687,11 +687,11 @@ class Game:
             mouse_coords = util.get_mouse_event()
 
             if reset_btn.collidepoint(mouse_coords[0], mouse_coords[1]):
-                button = mixer.Sound("button.wav")
+                button = mixer.Sound("Chess_Items/Sound/chess_button.wav")
                 button.play()
                 self.chess.reset()
             if exit_btn.collidepoint(mouse_coords[0], mouse_coords[1]):
-                button = mixer.Sound("button.wav")
+                button = mixer.Sound("Chess_Items/Sound/chess_button.wav")
                 button.play()
                 import frontpage
                 frontpage.mainpage()
@@ -701,7 +701,7 @@ class Game:
 
     def declare_winner(self, winner):
         mixer.music.stop()
-        button = mixer.Sound("pair_winning.wav")
+        button = mixer.Sound("Chess_Items/Sound/chess_winning.wav")
         button.play(0)
         self.bg = pygame.image.load("blackbg.jpg")
         self.bg = pygame.transform.scale(self.bg, (1000, 700))
@@ -730,12 +730,12 @@ class Game:
             mouse_coords = util.get_mouse_event()
 
             if reset_btn.collidepoint(mouse_coords[0], mouse_coords[1]):
-                button = mixer.Sound("button.wav")
+                button = mixer.Sound("Chess_Items/Sound/chess_button.wav")
                 button.play()
                 main()
 
             if exit_btn.collidepoint(mouse_coords[0], mouse_coords[1]):
-                button = mixer.Sound("button.wav")
+                button = mixer.Sound("Chess_Items/Sound/chess_button.wav")
                 button.play()
                 import frontpage
                 frontpage.mainpage()

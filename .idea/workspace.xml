@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6354dc93-b467-43ee-ac87-b7d2f58a0bbe" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Brain Steaks_1.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Brain Steaks_2.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SandL.py" beforeDir="false" afterPath="$PROJECT_DIR$/SandL.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SandL_background.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SandL_menupage.py" beforeDir="false" afterPath="$PROJECT_DIR$/SandL_menupage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Snakes-and-Ladders-Bigger.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/board.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cardback.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chess.py" beforeDir="false" afterPath="$PROJECT_DIR$/chess.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chess_background.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chess_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chess_menupage.py" beforeDir="false" afterPath="$PROJECT_DIR$/chess_menupage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clicking.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialog.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dice1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dice2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dice3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dice4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dice5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dice6.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dim.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/findpair_easy.py" beforeDir="false" afterPath="$PROJECT_DIR$/findpair_easy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/findpair_hard.py" beforeDir="false" afterPath="$PROJECT_DIR$/findpair_hard.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/findpair_levels.py" beforeDir="false" afterPath="$PROJECT_DIR$/findpair_levels.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/findpair_medium.py" beforeDir="false" afterPath="$PROJECT_DIR$/findpair_medium.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/findpair_menupage.py" beforeDir="false" afterPath="$PROJECT_DIR$/findpair_menupage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontpage.py" beforeDir="false" afterPath="$PROJECT_DIR$/frontpage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/greengoti.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/howto.py" beforeDir="false" afterPath="$PROJECT_DIR$/howto.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/howtoboxpair.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/howtoboxshuffle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/howtoboxsl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/howtoboxsudoku.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/howtoboxxox.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/howtochess.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_part_001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_part_002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_part_003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_part_004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_part_005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_part_006.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_part_007.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_part_008.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_part_009.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_part_010.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_part_011.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_part_012.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_part_013.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_part_014.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_part_015.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_part_016.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_button.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mainbg.png" beforeDir="false" afterPath="$PROJECT_DIR$/mainbg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pair1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pair10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pair11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pair12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pair13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pair14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pair15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pair2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pair3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pair4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pair5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pair6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pair7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pair8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pair9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pair_background.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pair_loosing.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pair_winning.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pairbg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/paircut.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pieces.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redglow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redgoti.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sh_button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sh_top.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shuffle.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shuffle.py" beforeDir="false" afterPath="$PROJECT_DIR$/shuffle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shuffle_background.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shuffle_menupage.py" beforeDir="false" afterPath="$PROJECT_DIR$/shuffle_menupage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudoku.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudoku_background.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudoku_easy.py" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku_easy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudoku_error.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudoku_hard.py" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku_hard.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudoku_levels.py" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku_levels.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudoku_loosing.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudoku_medium.py" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku_medium.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sudoku_menupage.py" beforeDir="false" afterPath="$PROJECT_DIR$/sudoku_menupage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xox.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xox.py" beforeDir="false" afterPath="$PROJECT_DIR$/xox.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xox_background.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xox_menupage.py" beforeDir="false" afterPath="$PROJECT_DIR$/xox_menupage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xox_winning.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xoxglow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yellowgoti.png" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1o9hP6V9A07ot4e1E0nBFS3vltn" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+  </component>
+  <component name="RunManager" selected="Python.Index">
+    <configuration name="Index" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Brain Steaks" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Index.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="chess" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Brain Steaks" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chess.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="findpair_easy" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Brain Steaks" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/findpair_easy.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="frontpage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Brain Steaks" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/frontpage.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Index" />
+        <item itemvalue="Python.frontpage" />
+        <item itemvalue="Python.chess" />
+        <item itemvalue="Python.findpair_easy" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6354dc93-b467-43ee-ac87-b7d2f58a0bbe" name="Default Changelist" comment="" />
+      <created>1612704692167</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1612704692167</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1536" height="118" key="GridCell.Tab.0.bottom" timestamp="1614275470828">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1536" height="118" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1614275470828" />
+    <state width="1536" height="118" key="GridCell.Tab.0.center" timestamp="1614275470828">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1536" height="118" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1614275470828" />
+    <state width="1536" height="118" key="GridCell.Tab.0.left" timestamp="1614275470828">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1536" height="118" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1614275470828" />
+    <state width="1536" height="118" key="GridCell.Tab.0.right" timestamp="1614275470828">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1536" height="118" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1614275470828" />
+  </component>
+</project>

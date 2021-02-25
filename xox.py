@@ -35,13 +35,13 @@ class clickable:
 
 
 def xox():
-    mixer.music.load('xox_background.mp3')
+    mixer.music.load('XOX_Items/Sound/xox_background.mp3')
     mixer.music.play(-1)
 
     diag = 0
 
     def strter():
-        mixer.music.load('xox_background.mp3')
+        mixer.music.load('XOX_Items/Sound/xox_background.mp3')
         mixer.music.play(-1)
         global oscore
         global xscore
@@ -55,10 +55,10 @@ def xox():
         img = pygame.image.load("blackbg.jpg")
         bg = pygame.transform.scale(img, (1000, 700))
         mydis.blit(bg, (0, 0))
-        img = pygame.image.load("xox.png")
+        img = pygame.image.load("XOX_Items/Images/xox.png")
         bg = pygame.transform.scale(img, (1000, 700))
         mydis.blit(bg, (0, 0))
-        img = pygame.image.load("xoxglow.png")
+        img = pygame.image.load("XOX_Items/Images/xoxglow.png")
         glw = pygame.transform.scale(img, (300, 100))
 
         textSurfaceObj = fontObj2.render("Player X:", True, black)
@@ -108,13 +108,13 @@ def xox():
     filled = [[0 for i in range(3)] for i in range(3)]
 
     def xwin():
-        button = mixer.Sound("xox_winning.wav")
+        button = mixer.Sound("XOX_Items/Sound/xox_winning.wav")
         button.play()
         global xscore
         nonlocal filled
         nonlocal taken
         global fc
-        img = pygame.image.load("xoxglow.png")
+        img = pygame.image.load("XOX_Items/Images/xoxglow.png")
         glw = pygame.transform.scale(img, (340, 140))
         mydis.blit(glw, (640, 80))
         pygame.display.update()
@@ -122,11 +122,11 @@ def xox():
         xscore = xscore + 1
         if xscore == 5:
             mixer.music.stop()
-            button = mixer.Sound("pair_winning.wav")
+            button = mixer.Sound("XOX_Items/Sound/pair_winning.wav")
             button.play()
-            img = pygame.image.load("dim.png")
+            img = pygame.image.load("XOX_Items/Images/dim.png")
             dim = pygame.transform.scale(img, (1000, 700))
-            img = pygame.image.load("dialog.png")
+            img = pygame.image.load("XOX_Items/Images/dialog.png")
             dial = pygame.transform.scale(img, (1000, 700))
             nonlocal diag
             mydis.blit(dim, (0, 0))
@@ -164,13 +164,13 @@ def xox():
                 fc = "X"
 
     def owin():
-        button = mixer.Sound("xox_winning.wav")
+        button = mixer.Sound("XOX_Items/Sound/xox_winning.wav")
         button.play()
         global oscore
         nonlocal taken
         nonlocal filled
         global fc
-        img = pygame.image.load("xoxglow.png")
+        img = pygame.image.load("XOX_Items/Images/xoxglow.png")
         glw = pygame.transform.scale(img, (340, 140))
         mydis.blit(glw, (640, 220))
         pygame.display.update()
@@ -180,11 +180,11 @@ def xox():
 
         if oscore == 5:
             mixer.music.stop()
-            button = mixer.Sound("pair_winning.wav")
+            button = mixer.Sound("XOX_Items/Sound/pair_winning.wav")
             button.play()
-            img = pygame.image.load("dim.png")
+            img = pygame.image.load("XOX_Items/Images/dim.png")
             dim = pygame.transform.scale(img, (1000, 700))
-            img = pygame.image.load("dialog.png")
+            img = pygame.image.load("XOX_Items/Images/dialog.png")
             dial = pygame.transform.scale(img, (1000, 700))
             nonlocal diag
             mydis.blit(dim, (0, 0))
@@ -298,30 +298,30 @@ def xox():
                                 check()
 
                                 if chance == "X":
-                                    button = mixer.Sound("button.wav")
+                                    button = mixer.Sound("XOX_Items/Sound/xox_button.wav")
                                     button.play()
                                     chance = "O"
                                 else:
-                                    button = mixer.Sound("button.wav")
+                                    button = mixer.Sound("XOX_Items/Sound/xox_button.wav")
                                     button.play()
                                     chance = "X"
                     if reset_b.isover(pos):
-                        button = mixer.Sound("button.wav")
+                        button = mixer.Sound("XOX_Items/Sound/xox_button.wav")
                         button.play()
                         reset_game()
                     if back_b.isover(pos):
-                        button = mixer.Sound("button.wav")
+                        button = mixer.Sound("XOX_Items/Sound/xox_button.wav")
                         button.play()
                         import xox_menupage
                         xox_menupage.main()
                 else:
                     if rest_b.isover(pos):
-                        button = mixer.Sound("button.wav")
+                        button = mixer.Sound("XOX_Items/Sound/xox_button.wav")
                         button.play()
                         diag = 0
                         reset_game()
                     if bck_b.isover(pos):
-                        button = mixer.Sound("button.wav")
+                        button = mixer.Sound("XOX_Items/Sound/xox_button.wav")
                         button.play()
                         diag = 0
                         import frontpage

@@ -8,13 +8,13 @@ pygame.font.init()
 
 
 def sudoku_medium():
-    mixer.music.load('sudoku_background.mp3')
+    mixer.music.load('Sudoku_Items/Sound/sudoku_background.mp3')
     mixer.music.play(-1)
     pygame.init()
     pygame.font.init()
     mydismed = pygame.display.set_mode((1000, 700))
     pygame.display.set_caption("SUDOKU MEDIUM BY BRAIN STEAKS")
-    imgmed = pygame.image.load('sudoku.png')
+    imgmed = pygame.image.load('Sudoku_Items/Images/sudoku.png')
     pygame.display.set_icon(imgmed)
 
     def create_fontmed(t, s=25, c=(255, 255, 0), b=False, i=False):
@@ -29,7 +29,7 @@ def sudoku_medium():
         bg = pygame.image.load("blackbg.jpg")
         bg = pygame.transform.scale(bg, (1000, 700))
         mydismed.blit(bg, (0, 0))
-        bg1 = pygame.image.load('sudoku.png')
+        bg1 = pygame.image.load('Sudoku_Items/Images/sudoku.png')
         bg1 = pygame.transform.scale(bg1, (1000, 700))
         mydismed.blit(bg1, (0, 0))
         pygame.draw.rect(mydismed, (0, 0, 255), (810, 315, 150, 35))
@@ -199,7 +199,7 @@ def sudoku_medium():
                     mydismed.blit(text1, (i * difmed + 15 + 230, j * difmed + 15 + 110))
 
     def error1med():
-        button = mixer.Sound("sudoku_error.wav")
+        button = mixer.Sound("Sudoku_Items/Sound/sudoku_error.wav")
         button.play()
         text1 = fontnmed.render("NOT A VALID KEY", 1, (117, 255, 255, 1))
         mydismed.blit(text1, (250, 45))
@@ -212,7 +212,7 @@ def sudoku_medium():
         bg = pygame.transform.scale(bg, (1000, 700))
         mydismed.blit(bg, (0, 0))
         mixer.music.stop()
-        button = mixer.Sound("sudoku_loosing.wav")
+        button = mixer.Sound("Sudoku_Items/Sound/sudoku_loosing.wav")
         button.play()
         text9 = fontxmed.render("--GAME__OVER--", 1, (255, 255, 255))
         mydismed.blit(text9, (300, 330))
@@ -240,7 +240,7 @@ def sudoku_medium():
             bg = pygame.transform.scale(bg, (1000, 700))
             mydismed.blit(bg, (0, 0))
             mixer.music.stop()
-            button = mixer.Sound("pair_winning.wav")
+            button = mixer.Sound("Sudoku_Items/Sound/pair_winning.wav")
             button.play()
             pygame.draw.rect(mydismed, (0, 0, 0), (10, 10, 1000, 700))
             text11 = fontxmed.render("--WINNER--", 1, (255, 255, 255))
@@ -253,7 +253,7 @@ def sudoku_medium():
             chancesmed += 0
             draw_quesmed()
             init_gridmed()
-            mixer.music.load('sudoku_background.mp3')
+            mixer.music.load('Sudoku_Items/Sound/sudoku_background.mp3')
             mixer.music.play(-1)
 
     bgmed()
@@ -274,7 +274,7 @@ def sudoku_medium():
             draw_gridmed()
 
             if event.type == pygame.MOUSEBUTTONDOWN:
-                button = mixer.Sound("button.wav")
+                button = mixer.Sound("Sudoku_Items/Sound/sudoku_button.wav")
                 button.play()
                 pos = pygame.mouse.get_pos()
 
@@ -313,7 +313,7 @@ def sudoku_medium():
 
                 if pos[0] >= 810 and pos[1] >= 425:
                     if pos[0] <= 960 and pos[1] <= 460:
-                        button = mixer.Sound("button.wav")
+                        button = mixer.Sound("Sudoku_Items/Sound/sudoku_button.wav")
                         button.play()
                         import sudoku_levels
                         sudoku_levels.levels()
@@ -386,7 +386,7 @@ def sudoku_medium():
                 init_gridmed()
                 initmed()
                 bgmed()
-                mixer.music.load('sudoku_background.mp3')
+                mixer.music.load('Sudoku_Items/Sound/sudoku_background.mp3')
                 mixer.music.play(-1)
                 draw_quesmed()
             winmed()

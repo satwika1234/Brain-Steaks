@@ -23,7 +23,7 @@ class clickable:
 
 
 def howtopair():
-    img = pygame.image.load("howtoboxpair.png")
+    img = pygame.image.load("HowTo_Images/howtoboxpair.png")
     back = pygame.transform.scale(img, (1000, 700))
     mydis.blit(back, (0, 0))
 
@@ -44,7 +44,7 @@ def howtopair():
 
 
 def howtoshuffle():
-    img = pygame.image.load("howtoboxshuffle.png")
+    img = pygame.image.load("HowTo_Images/howtoboxshuffle.png")
     back = pygame.transform.scale(img, (1000, 700))
     mydis.blit(back, (0, 0))
 
@@ -65,7 +65,7 @@ def howtoshuffle():
 
 
 def howtosandl():
-    img = pygame.image.load("howtoboxsl.png")
+    img = pygame.image.load("HowTo_Images/howtoboxsl.png")
     back = pygame.transform.scale(img, (1000, 700))
     mydis.blit(back, (0, 0))
 
@@ -86,7 +86,7 @@ def howtosandl():
 
 
 def howtosudoku():
-    img = pygame.image.load("howtoboxsudoku.png")
+    img = pygame.image.load("HowTo_Images/howtoboxsudoku.png")
     back = pygame.transform.scale(img, (1000, 700))
     mydis.blit(back, (0, 0))
 
@@ -107,7 +107,7 @@ def howtosudoku():
 
 
 def howtoxox():
-    img = pygame.image.load("howtoboxxox.png")
+    img = pygame.image.load("HowTo_Images/howtoboxxox.png")
     back = pygame.transform.scale(img, (1000, 700))
     mydis.blit(back, (0, 0))
 
@@ -128,7 +128,7 @@ def howtoxox():
 
 
 def howtochess():
-    img = pygame.image.load("howtochess.png")
+    img = pygame.image.load("HowTo_Images/howtochess.png")
     back = pygame.transform.scale(img, (1000, 700))
     mydis.blit(back, (0, 0))
 

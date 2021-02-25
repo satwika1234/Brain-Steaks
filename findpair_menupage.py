@@ -37,24 +37,24 @@ def main():
             button_4 = pygame.Rect(0, 0, 75, 45)
             if button_1.collidepoint((mx, my)):
                 if click:
-                    button = mixer.Sound("button.wav")
+                    button = mixer.Sound("FindPair_Items/Sound/button.wav")
                     button.play()
                     import findpair_levels
                     findpair_levels.levels()
             if button_2.collidepoint((mx, my)):
                 if click:
-                    button = mixer.Sound("button.wav")
+                    button = mixer.Sound("FindPair_Items/Sound/button.wav")
                     button.play()
                     import howto
                     howto.howtopair()
             if button_3.collidepoint((mx, my)):
                 if click:
-                    button = mixer.Sound("button.wav")
+                    button = mixer.Sound("FindPair_Items/Sound/button.wav")
                     button.play()
                     credits()
             if button_4.collidepoint((mx, my)):
                 if click:
-                    button = mixer.Sound("button.wav")
+                    button = mixer.Sound("FindPair_Items/Sound/button.wav")
                     button.play()
                     import frontpage
                     frontpage.mainpage()

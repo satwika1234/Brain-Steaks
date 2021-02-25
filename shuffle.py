@@ -36,7 +36,7 @@ class clickable:
 
 
 def shuffle():
-    mixer.music.load('shuffle_background.mp3')
+    mixer.music.load('Shuffle_Items/Sound/shuffle_background.mp3')
     mixer.music.play(-1)
 
     back_b = clickable(30, 260, 200, 80, 50)
@@ -49,10 +49,10 @@ def shuffle():
     moves = 0
     imglist = [0] * 16
 
-    img = pygame.image.load("dim.png")
+    img = pygame.image.load("Shuffle_Items/Images/dim.png")
     dim = pygame.transform.scale(img, (1000, 700))
 
-    img = pygame.image.load("dialog.png")
+    img = pygame.image.load("Shuffle_Items/Images/dialog.png")
     dial = pygame.transform.scale(img, (1000, 700))
     img = [0] * 16
 
@@ -72,22 +72,22 @@ def shuffle():
         mydis.blit(bg, (0, 0))
 
         addmoves()
-        im1 = pygame.image.load("image_part_001.png")
-        im2 = pygame.image.load("image_part_002.png")
-        im3 = pygame.image.load("image_part_003.png")
-        im4 = pygame.image.load("image_part_004.png")
-        im5 = pygame.image.load("image_part_005.png")
-        im6 = pygame.image.load("image_part_006.png")
-        im7 = pygame.image.load("image_part_007.png")
-        im8 = pygame.image.load("image_part_008.png")
-        im9 = pygame.image.load("image_part_009.png")
-        im10 = pygame.image.load("image_part_010.png")
-        im11 = pygame.image.load("image_part_011.png")
-        im12 = pygame.image.load("image_part_012.png")
-        im13 = pygame.image.load("image_part_013.png")
-        im14 = pygame.image.load("image_part_014.png")
-        im15 = pygame.image.load("image_part_015.png")
-        im16 = pygame.image.load("image_part_016.png")
+        im1 = pygame.image.load("Shuffle_Items/Images/image_part_001.png")
+        im2 = pygame.image.load("Shuffle_Items/Images/image_part_002.png")
+        im3 = pygame.image.load("Shuffle_Items/Images/image_part_003.png")
+        im4 = pygame.image.load("Shuffle_Items/Images/image_part_004.png")
+        im5 = pygame.image.load("Shuffle_Items/Images/image_part_005.png")
+        im6 = pygame.image.load("Shuffle_Items/Images/image_part_006.png")
+        im7 = pygame.image.load("Shuffle_Items/Images/image_part_007.png")
+        im8 = pygame.image.load("Shuffle_Items/Images/image_part_008.png")
+        im9 = pygame.image.load("Shuffle_Items/Images/image_part_009.png")
+        im10 = pygame.image.load("Shuffle_Items/Images/image_part_010.png")
+        im11 = pygame.image.load("Shuffle_Items/Images/image_part_011.png")
+        im12 = pygame.image.load("Shuffle_Items/Images/image_part_012.png")
+        im13 = pygame.image.load("Shuffle_Items/Images/image_part_013.png")
+        im14 = pygame.image.load("Shuffle_Items/Images/image_part_014.png")
+        im15 = pygame.image.load("Shuffle_Items/Images/image_part_015.png")
+        im16 = pygame.image.load("Shuffle_Items/Images/image_part_016.png")
         for i in range(1, 17):
             im_str = "im" + str(i)
             img[i - 1] = pygame.transform.scale(eval(im_str), (120, 120))
@@ -121,7 +121,7 @@ def shuffle():
             clicklist.append(ob)
 
     def addmoves():
-        bg = pygame.image.load("sh_top.png")
+        bg = pygame.image.load("Shuffle_Items/Images/sh_top.png")
         bg = pygame.transform.scale(bg, (1000, 700))
         mydis.blit(bg, (0, 0))
         textSurfaceObj = fontObj2.render("MOVES : " + str(moves), True, white)
@@ -151,7 +151,7 @@ def shuffle():
         bg = pygame.image.load("blackbg.jpg")
         bg = pygame.transform.scale(bg, (1000, 700))
         mydis.blit(bg, (0, 0))
-        bg = pygame.image.load("sh_button.png")
+        bg = pygame.image.load("Shuffle_Items/Images/sh_button.png")
         bg = pygame.transform.scale(bg, (1000, 700))
         mydis.blit(bg, (0, 0))
         textSurfaceObj = fontObj2.render("EXIT", True, white)
@@ -165,7 +165,7 @@ def shuffle():
         mydis.blit(textSurfaceObj, textRectObj)
 
         pygame.draw.rect(mydis, black, (620, 530, 120, 120))
-        org = pygame.image.load("shuffle.jpg")
+        org = pygame.image.load("Shuffle_Items/Images/shuffle.jpg")
         org = pygame.transform.scale(org, (200, 200))
         mydis.blit(org, (770, 100))
 
@@ -182,7 +182,7 @@ def shuffle():
         pygame.draw.rect(mydis, black, (620, 530, 120, 120))
 
     def winner(a):
-        but = mixer.Sound("pair_winning.wav")
+        but = mixer.Sound("Shuffle_Items/Sound/shuffle_winning.wav")
         but.play(0)
         nonlocal diag
         nonlocal dim
@@ -236,19 +236,19 @@ def shuffle():
             if event.type == pygame.MOUSEBUTTONDOWN:
                 if diag == 0:
                     if back_b.isover(mpos):
-                        button = mixer.Sound("button.wav")
+                        button = mixer.Sound("Shuffle_Items/Sound/shuffle_button.wav")
                         button.play()
                         import shuffle_menupage
                         shuffle_menupage.main()
                     if reset_b.isover(mpos):
-                        button = mixer.Sound("button.wav")
+                        button = mixer.Sound("Shuffle_Items/Sound/shuffle_button.wav")
                         button.play()
                         moves = 0
                         reset()
 
                     for i in clicklist:
                         if i.isover(mpos):
-                            button = mixer.Sound("button.wav")
+                            button = mixer.Sound("Shuffle_Items/Sound/shuffle_button.wav")
                             button.play()
                             pos = i.uid
                             if imglist[pos - 1] != 0:
@@ -306,12 +306,12 @@ def shuffle():
                             check()
                 else:
                     if rest_b.isover(mpos):
-                        button = mixer.Sound("button.wav")
+                        button = mixer.Sound("Shuffle_Items/Sound/shuffle_button.wav")
                         button.play()
                         moves = 0
                         reset()
                     if bck_b.isover(mpos):
-                        button = mixer.Sound("button.wav")
+                        button = mixer.Sound("Shuffle_Items/Sound/shuffle_button.wav")
                         button.play()
                         import shuffle_menupage
                         shuffle_menupage.main()

@@ -32,8 +32,6 @@ class clickable:
 
 
 def mainpage():
-    mixer.music.load('main_background.mp3')
-    mixer.music.play(-1)
     bg = pygame.image.load("mainbg.png")
     bg = pygame.transform.scale(bg, (1000, 700))
     mydis.blit(bg, (0, 0))
@@ -52,7 +50,7 @@ def mainpage():
     mydis.blit(paper, textrect)
 
     font2 = pygame.font.Font("freesansbold.ttf", 30)
-    gtext1 = font2.render("sudoku", True, txtcolor)
+    gtext1 = font2.render("Sudoku", True, txtcolor)
     textrect = gtext1.get_rect()
     textrect.center = (500, 300)
     mydis.blit(gtext1, textrect)

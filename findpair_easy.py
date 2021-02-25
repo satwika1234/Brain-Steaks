@@ -35,26 +35,26 @@ class clickable:
 
 
 def pair_easy():
-    mixer.music.load('pair_background.mp3')
+    mixer.music.load('FindPair_Items/Sound/pair_background.mp3')
     mixer.music.play(-1)
 
     img = pygame.image.load("blackbg.jpg")
     bgo = pygame.transform.scale(img, (1000, 700))
     mydis.blit(bgo, (0, 0))
-    img = pygame.image.load("pairbg.png")
+    img = pygame.image.load("FindPair_Items/Images/pairbg.png")
     bg = pygame.transform.scale(img, (1000, 700))
     mydis.blit(bg, (0, 0))
 
-    cback = pygame.image.load("cardback.png")
+    cback = pygame.image.load("FindPair_Items/Images/cardback.png")
     cback = pygame.transform.scale(cback, (135, 170))
 
-    img = pygame.image.load("paircut.png")
+    img = pygame.image.load("FindPair_Items/Images/paircut.png")
     cut = pygame.transform.scale(img, (1000, 700))
 
-    img = pygame.image.load("dim.png")
+    img = pygame.image.load("FindPair_Items/Images/dim.png")
     dim = pygame.transform.scale(img, (1000, 700))
 
-    img = pygame.image.load("dialog.png")
+    img = pygame.image.load("FindPair_Items/Images/dialog.png")
     dial = pygame.transform.scale(img, (1000, 700))
 
     textSurfaceObj = fontObj2.render("LIVES", True, black)
@@ -121,22 +121,22 @@ def pair_easy():
     curr_img = None
     curr_num = None
 
-    img = pygame.image.load("pair1.png")
+    img = pygame.image.load("FindPair_Items/Images/pair1.png")
     img1 = pygame.transform.scale(img, (135, 170))
 
-    img = pygame.image.load("pair2.png")
+    img = pygame.image.load("FindPair_Items/Images/pair2.png")
     img2 = pygame.transform.scale(img, (135, 170))
 
-    img = pygame.image.load("pair3.jpg")
+    img = pygame.image.load("FindPair_Items/Images/pair3.jpg")
     img3 = pygame.transform.scale(img, (135, 170))
 
-    img = pygame.image.load("pair4.jpg")
+    img = pygame.image.load("FindPair_Items/Images/pair4.jpg")
     img4 = pygame.transform.scale(img, (135, 170))
 
-    img = pygame.image.load("pair5.png")
+    img = pygame.image.load("FindPair_Items/Images/pair5.png")
     img5 = pygame.transform.scale(img, (135, 170))
 
-    img = pygame.image.load("pair6.jpg")
+    img = pygame.image.load("FindPair_Items/Images/pair6.jpg")
     img6 = pygame.transform.scale(img, (135, 170))
 
     def flip(n):
@@ -168,7 +168,7 @@ def pair_easy():
             active = 1
 
     def reset():
-        mixer.music.load('pair_background.mp3')
+        mixer.music.load('FindPair_Items/Sound/pair_background.mp3')
         mixer.music.play()
         nonlocal c_left
         nonlocal selected
@@ -207,7 +207,7 @@ def pair_easy():
 
     def show_win():
         mixer.music.stop()
-        button = mixer.Sound("pair_winning.wav")
+        button = mixer.Sound("FindPair_Items/Sound/pair_winning.wav")
         button.play()
         nonlocal diag
         mydis.blit(dim, (0, 0))
@@ -229,7 +229,7 @@ def pair_easy():
 
     def show_loss():
         mixer.music.stop()
-        mixer.music.load('pair_loosing.mp3')
+        mixer.music.load('FindPair_Items/Sound/pair_loosing.mp3')
         mixer.music.play()
 
         nonlocal diag
@@ -296,29 +296,29 @@ def pair_easy():
             if event.type == pygame.MOUSEBUTTONDOWN:
                 if diag == 0:
                     for i in cards:
-                        button = mixer.Sound("button.wav")
+                        button = mixer.Sound("FindPair_Items/Sound/button.wav")
                         button.play()
                         if i.isover(pos) and i.uid not in selected:
                             flip(i.uid)
 
                     if back_b.isover(pos):
-                        button = mixer.Sound("button.wav")
+                        button = mixer.Sound("FindPair_Items/Sound/button.wav")
                         button.play()
                         import findpair_levels
                         findpair_levels.levels()
                     if reset_b.isover(pos):
-                        button = mixer.Sound("button.wav")
+                        button = mixer.Sound("FindPair_Items/Sound/button.wav")
                         button.play()
                         reset()
 
                 if diag == 1:
                     if rest_b.isover(pos):
-                        button = mixer.Sound("button.wav")
+                        button = mixer.Sound("FindPair_Items/Sound/button.wav")
                         button.play()
                         reset()
                         diag = 0
                     if bck_b.isover(pos):
-                        button = mixer.Sound("button.wav")
+                        button = mixer.Sound("FindPair_Items/Sound/button.wav")
                         button.play()
                         import findpair_levels
                         findpair_levels.levels()

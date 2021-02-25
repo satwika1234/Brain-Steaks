@@ -36,28 +36,28 @@ def levels():
 
         if button_1.collidepoint((mx, my)):
             if click:
-                button = mixer.Sound("button.wav")
+                button = mixer.Sound("FindPair_Items/Sound/button.wav")
                 button.play()
                 import findpair_easy
                 findpair_easy.pair_easy()
 
         if button_2.collidepoint((mx, my)):
             if click:
-                button = mixer.Sound("button.wav")
+                button = mixer.Sound("FindPair_Items/Sound/button.wav")
                 button.play()
                 import findpair_medium
                 findpair_medium.pair_medium()
 
         if button_3.collidepoint((mx, my)):
             if click:
-                button = mixer.Sound("button.wav")
+                button = mixer.Sound("FindPair_Items/Sound/button.wav")
                 button.play()
                 import findpair_hard
                 findpair_hard.pair_hard()
 
         if button_4.collidepoint((mx, my)):
             if click:
-                button = mixer.Sound("button.wav")
+                button = mixer.Sound("FindPair_Items/Sound/button.wav")
                 button.play()
                 import findpair_menupage
                 findpair_menupage.main()

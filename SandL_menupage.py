@@ -37,24 +37,24 @@ def main():
             button_4 = pygame.Rect(0, 0, 75, 45)
             if button_1.collidepoint((mx, my)):
                 if click:
-                    button = mixer.Sound("button.wav")
+                    button = mixer.Sound("SandL_Items/Sound/SandL_button.wav")
                     button.play()
                     import SandL
                     SandL.options()
             if button_2.collidepoint((mx, my)):
                 if click:
-                    button = mixer.Sound("button.wav")
+                    button = mixer.Sound("SandL_Items/Sound/SandL_button.wav")
                     button.play()
                     import howto
                     howto.howtosandl()
             if button_3.collidepoint((mx, my)):
                 if click:
-                    button = mixer.Sound("button.wav")
+                    button = mixer.Sound("SandL_Items/Sound/SandL_button.wav")
                     button.play()
                     credits()
             if button_4.collidepoint((mx, my)):
                 if click:
-                    button = mixer.Sound("button.wav")
+                    button = mixer.Sound("SandL_Items/Sound/SandL_button.wav")
                     button.play()
                     import frontpage
                     frontpage.mainpage()

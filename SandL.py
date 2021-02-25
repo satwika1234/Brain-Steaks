@@ -23,19 +23,19 @@ red = (200, 0, 0)
 b_red = (240, 0, 0)
 bg = pygame.image.load("blackbg.jpg")
 GD.blit(bg, (0, 0))
-board = pygame.image.load("Snakes-and-Ladders-Bigger.jpg")
+board = pygame.image.load("SandL_Items/Images/Snakes-and-Ladders-Bigger.jpg")
 GD.blit(board, (w / 2 - 250, h / 2 - 250))
-dice1 = pygame.image.load("dice1.png")
-dice2 = pygame.image.load("dice2.gif")
-dice3 = pygame.image.load("dice3.gif")
-dice4 = pygame.image.load("dice4.gif")
-dice5 = pygame.image.load("dice5.gif")
-dice6 = pygame.image.load("dice6.gif")
-redgoti = pygame.image.load("redgoti.png")
+dice1 = pygame.image.load("SandL_Items/Images/dice1.png")
+dice2 = pygame.image.load("SandL_Items/Images/dice2.gif")
+dice3 = pygame.image.load("SandL_Items/Images/dice3.gif")
+dice4 = pygame.image.load("SandL_Items/Images/dice4.gif")
+dice5 = pygame.image.load("SandL_Items/Images/dice5.gif")
+dice6 = pygame.image.load("SandL_Items/Images/dice6.gif")
+redgoti = pygame.image.load("SandL_Items/Images/redgoti.png")
 
-yellowgoti = pygame.image.load("yellowgoti.png")
+yellowgoti = pygame.image.load("SandL_Items/Images/yellowgoti.png")
 
-greengoti = pygame.image.load("greengoti.png")
+greengoti = pygame.image.load("SandL_Items/Images/greengoti.png")
 green = (0, 200, 0)
 b_green = (0, 230, 0)
 
@@ -89,15 +89,15 @@ def button(text, xmouse, ymouse, x, y, w, h, i, a, fs, b):
             elif b == 0:
                 Quit()
             elif b == 21:
-                but = mixer.Sound("button.wav")
+                but = mixer.Sound("SandL_Items/Sound/SandL_button.wav")
                 but.play()
                 play(21)
             elif b == 13:
-                but = mixer.Sound("button.wav")
+                but = mixer.Sound("SandL_Items/Sound/SandL_button.wav")
                 but.play()
                 play(2)
             elif b == "s" or b == 2:
-                but = mixer.Sound("button.wav")
+                but = mixer.Sound("SandL_Items/Sound/SandL_button.wav")
                 but.play()
                 return b
             elif b == 7:
@@ -255,15 +255,15 @@ def options():
         # Back button
         b5 = button("Back", mouse[0], mouse[1], 0, 0, 200, 50, (0, 17, 240), b_red, 30, 5)
         if b5 == 5:
-            but = mixer.Sound("button.wav")
+            but = mixer.Sound(".SandL_Items/Sound/SandL_button.wav")
             but.play()
 
         if b1 == "s":
-            but = mixer.Sound("button.wav")
+            but = mixer.Sound("SandL_Items/Sound/SandL_button.wav")
             but.play()
             play(21)
         if b2 == 2:
-            but = mixer.Sound("button.wav")
+            but = mixer.Sound("SandL_Items/Sound/SandL_button.wav")
             but.play()
             play(2)
 
@@ -271,7 +271,7 @@ def options():
 
 
 def play(b):
-    mixer.music.load('SandL_background.mp3')
+    mixer.music.load('SandL_Items/Sound/SandL_background.mp3')
     mixer.music.play(-1)
     p1score = 0
 
@@ -302,7 +302,7 @@ def play(b):
         if (b == 21):
             if (button1("Player ", mouse[0], mouse[1], 90, 400, 100, 30, red, (50, 50, 50), 20)):
                 if t == 1:
-                    but = mixer.Sound("button.wav")
+                    but = mixer.Sound("SandL_Items/Sound/SandL_button.wav")
                     but.play()
 
                     p1score, s = turn(p1score, s)
@@ -313,7 +313,7 @@ def play(b):
                     pygame.display.update()
                     if p1score == 100:
                         mixer.music.stop()
-                        but = mixer.Sound("pair_winning.wav")
+                        but = mixer.Sound("SandL_Items/Sound/SandL_winning.wav")
                         but.play(0)
                         time = pygame.time.get_ticks()
                         while pygame.time.get_ticks() - time < 2000:
@@ -339,7 +339,7 @@ def play(b):
 
                     pygame.display.update()
                     if p2score == 100:
-                        but = mixer.Sound("pair_winning.wav")
+                        but = mixer.Sound("SandL_Items/Sound/SandL_winning.wav")
                         but.play(0)
                         time = pygame.time.get_ticks()
                         while pygame.time.get_ticks() - time < 2000:
@@ -353,7 +353,7 @@ def play(b):
         else:
             if (button1("Player 1", mouse[0], mouse[1], 90, 400, 100, 30, red, (50, 50, 50), 20)):
                 if t == 1:
-                    but = mixer.Sound("button.wav")
+                    but = mixer.Sound("SandL_Items/Sound/SandL_button.wav")
                     but.play()
                     p1score, s = turn(p1score, s)
                     if not s:
@@ -362,7 +362,7 @@ def play(b):
 
                     pygame.display.update()
                     if p1score == 100:
-                        but = mixer.Sound("pair_winning.wav")
+                        but = mixer.Sound("SandL_Items/Sound/SandL_winning.wav")
                         but.play(0)
                         time = pygame.time.get_ticks()
                         while pygame.time.get_ticks() - time < 2000:
@@ -378,7 +378,7 @@ def play(b):
             if (button1("Player 2", mouse[0], mouse[1], 90, 450, 100, 30, (255, 155, 10), (50, 50, 50), 19)):
 
                 p2score, s = turn(p2score, s)
-                but = mixer.Sound("button.wav")
+                but = mixer.Sound("SandL_Items/Sound/SandL_button.wav")
                 but.play()
                 if not s:
                     t = 1
@@ -386,7 +386,7 @@ def play(b):
 
                 pygame.display.update()
                 if p2score == 100:
-                    but = mixer.Sound("pair_winning.wav")
+                    but = mixer.Sound("SandL_Items/Sound/SandL_winning.wav")
                     but.play(0)
                     time = pygame.time.get_ticks()
                     while pygame.time.get_ticks() - time < 2000:

@@ -37,25 +37,25 @@ def main():
             button_4 = pygame.Rect(0, 0, 75, 45)
             if button_1.collidepoint((mx, my)):
                 if click:
-                    button = mixer.Sound("button.wav")
+                    button = mixer.Sound("Shuffle_Items/Sound/shuffle_button.wav")
                     button.play()
                     import shuffle
                     shuffle.shuffle()
 
             if button_2.collidepoint((mx, my)):
                 if click:
-                    button = mixer.Sound("button.wav")
+                    button = mixer.Sound("Shuffle_Items/Sound/shuffle_button.wav")
                     button.play()
                     import howto
                     howto.howtoshuffle()
             if button_3.collidepoint((mx, my)):
                 if click:
-                    button = mixer.Sound("button.wav")
+                    button = mixer.Sound("Shuffle_Items/Sound/shuffle_button.wav")
                     button.play()
                     credits()
             if button_4.collidepoint((mx, my)):
                 if click:
-                    button = mixer.Sound("button.wav")
+                    button = mixer.Sound("Shuffle_Items/Sound/shuffle_button.wav")
                     button.play()
                     import frontpage
                     frontpage.mainpage()

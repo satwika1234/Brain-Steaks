@@ -36,28 +36,28 @@ def levels():
 
         if button_1.collidepoint((mx, my)):
             if click:
-                button = mixer.Sound("button.wav")
+                button = mixer.Sound("Sudoku_Items/Sound/sudoku_button.wav")
                 button.play()
                 import sudoku_easy
                 sudoku_easy.sudoku_easy()
 
         if button_2.collidepoint((mx, my)):
             if click:
-                button = mixer.Sound("button.wav")
+                button = mixer.Sound("Sudoku_Items/Sound/sudoku_button.wav")
                 button.play()
                 import sudoku_medium
                 sudoku_medium.sudoku_medium()
 
         if button_3.collidepoint((mx, my)):
             if click:
-                button = mixer.Sound("button.wav")
+                button = mixer.Sound("Sudoku_Items/Sound/sudoku_button.wav")
                 button.play()
                 import sudoku_hard
                 sudoku_hard.sudoku_hard()
 
         if button_4.collidepoint((mx, my)):
             if click:
-                button = mixer.Sound("button.wav")
+                button = mixer.Sound("Sudoku_Items/Sound/sudoku_button.wav")
                 button.play()
                 import sudoku_menupage
                 sudoku_menupage.main()

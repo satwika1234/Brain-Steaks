@@ -8,13 +8,13 @@ pygame.font.init()
 
 
 def sudoku_hard():
-    mixer.music.load('sudoku_background.mp3')
+    mixer.music.load('Sudoku_Items/Sound/sudoku_background.mp3')
     mixer.music.play(-1)
     pygame.init()
     pygame.font.init()
     mydishard = pygame.display.set_mode((1000, 700))
     pygame.display.set_caption("SUDOKU HARD BY BRAIN STEAKS")
-    imghard = pygame.image.load('sudoku.png')
+    imghard = pygame.image.load('Sudoku_Items/Images/sudoku.png')
     pygame.display.set_icon(imghard)
 
     def create_fonthard(t, s=25, c=(255, 255, 0), b=False, i=False):
@@ -29,7 +29,7 @@ def sudoku_hard():
         bg = pygame.image.load("blackbg.jpg")
         bg = pygame.transform.scale(bg, (1000, 700))
         mydishard.blit(bg, (0, 0))
-        bg1 = pygame.image.load('sudoku.png')
+        bg1 = pygame.image.load('Sudoku_Items/Images/sudoku.png')
         bg1 = pygame.transform.scale(bg1, (1000, 700))
         mydishard.blit(bg1, (0, 0))
         pygame.draw.rect(mydishard, (0, 0, 255), (810, 315, 150, 35))
@@ -197,7 +197,7 @@ def sudoku_hard():
                     mydishard.blit(text1, (i * difhard + 15 + 230, j * difhard + 15 + 110))
 
     def error1hard():
-        button = mixer.Sound("sudoku_error.wav")
+        button = mixer.Sound("Sudoku_Items/Sound/sudoku_error.wav")
         button.play()
         text1 = fotnhard.render("NOT A valhardID KEY", 1, (117, 255, 255, 1))
         mydishard.blit(text1, (250, 45))
@@ -210,7 +210,7 @@ def sudoku_hard():
         bg = pygame.transform.scale(bg, (1000, 700))
         mydishard.blit(bg, (0, 0))
         mixer.music.stop()
-        button = mixer.Sound("sudoku_loosing.wav")
+        button = mixer.Sound("Sudoku_Items/Sound/sudoku_loosing.wav")
         button.play()
         text9 = fontxhard.render("--GAME__OVER--", 1, (255, 255, 255))
         mydishard.blit(text9, (300, 330))
@@ -238,7 +238,7 @@ def sudoku_hard():
             bg = pygame.transform.scale(bg, (1000, 700))
             mydishard.blit(bg, (0, 0))
             mixer.music.stop()
-            button = mixer.Sound("pair_winning.wav")
+            button = mixer.Sound("Sudoku_Items/Sound/pair_winning.wav")
             button.play()
             pygame.draw.rect(mydishard, (0, 0, 0), (10, 10, 1000, 700))
             text11 = fontxhard.render("--WINNER--", 1, (255, 255, 255))
@@ -251,7 +251,7 @@ def sudoku_hard():
             chanceshard += 0
             draw_queshard()
             init_gridhard()
-            mixer.music.load('sudoku_background.mp3')
+            mixer.music.load('Sudoku_Items/Sound/sudoku_background.mp3')
             mixer.music.play(-1)
 
     bghard()
@@ -272,7 +272,7 @@ def sudoku_hard():
             draw_gridhard()
 
             if event.type == pygame.MOUSEBUTTONDOWN:
-                button = mixer.Sound("button.wav")
+                button = mixer.Sound("Sudoku_Items/Sound/sudoku_button.wav")
                 button.play()
 
                 poshard = pygame.mouse.get_pos()
@@ -312,7 +312,7 @@ def sudoku_hard():
 
                 if poshard[0] >= 810 and poshard[1] >= 425:
                     if poshard[0] <= 960 and poshard[1] <= 460:
-                        button = mixer.Sound("button.wav")
+                        button = mixer.Sound("Sudoku_Items/Sound/sudoku_button.wav")
                         button.play()
                         import sudoku_levels
                         sudoku_levels.levels()
@@ -385,7 +385,7 @@ def sudoku_hard():
                 inithard()
                 bghard()
                 draw_queshard()
-                mixer.music.load('sudoku_background.mp3')
+                mixer.music.load('Sudoku_Items/Sound/sudoku_background.mp3')
                 mixer.music.play(-1)
             winhard()
         pygame.display.update()

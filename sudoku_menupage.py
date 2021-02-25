@@ -33,27 +33,27 @@ def main():
             button_4 = pygame.Rect(0, 0, 75, 45)
             if button_1.collidepoint((mx, my)):
                 if click:
-                    button = mixer.Sound("button.wav")
+                    button = mixer.Sound("Sudoku_Items/Sound/sudoku_button.wav")
                     button.play()
                     import sudoku_levels
                     sudoku_levels.levels()
 
             if button_2.collidepoint((mx, my)):
                 if click:
-                    button = mixer.Sound("button.wav")
+                    button = mixer.Sound("Sudoku_Items/Sound/sudoku_button.wav")
                     button.play()
                     import howto
                     howto.howtosudoku()
             if button_3.collidepoint((mx, my)):
                 if click:
-                    button = mixer.Sound("button.wav")
+                    button = mixer.Sound(".Sudoku_Items/Sound/sudoku_button.wav")
                     button.play()
                     import credits
                     credits.credit()
 
             if button_4.collidepoint((mx, my)):
                 if click:
-                    button = mixer.Sound("button.wav")
+                    button = mixer.Sound("Sudoku_Items/Sound/sudoku_button.wav")
                     button.play()
                     import frontpage
                     frontpage.mainpage()
